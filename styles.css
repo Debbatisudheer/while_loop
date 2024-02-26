@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#welcomeText {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#welcomeText h1 {
+    font-size: 36px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#gameCanvas {
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #333;
+    border-radius: 10px;
+}
+
+#gameRules {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+#gameRules h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+#gameRules p {
+    font-size: 18px;
+    color: #666;
+}
+
+#gameOverOverlay {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 24px;
+}
+
+#gameOverOverlay p {
+    margin: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+#gameOverOverlay:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+#footer {
+    text-align: center;
+
+}
+#gameCanvas {
+    width: 100%;
+    height: auto;
+    border: 5px solid #333;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    #gameCanvas {
+        width: 90%;
+    }
+}
